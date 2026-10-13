@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior:none;color:#131b2e;font-family:'Plus Jakarta Sans',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-fixed-dim":"#47d6ff","error-container":"#ffdad6","surface-container-high":"#e2e7ff","secondary-container":"#316bf3","on-primary-fixed-variant":"#264191","surface-container-lowest":"#ffffff","on-primary-container":"#90a8ff","on-surface":"#131b2e","outline":"#757682","surface-container-highest":"#dae2fd","on-secondary-container":"#fefcff","surface-bright":"#faf8ff","on-primary":"#ffffff","surface-container":"#eaedff","on-secondary-fixed":"#00174b","on-primary-fixed":"#00164e","on-tertiary-fixed":"#001f28","secondary":"#0051d5","primary":"#00236f","tertiary-fixed":"#b6ebff","background":"#faf8ff","on-error-container":"#93000a","surface-dim":"#d2d9f4","on-surface-variant":"#444651","secondary-fixed":"#dbe1ff","primary-fixed-dim":"#b6c4ff","primary-fixed":"#dce1ff","on-tertiary":"#ffffff","inverse-on-surface":"#eef0ff","surface-tint":"#4059aa","on-tertiary-container":"#00bbe3","inverse-primary":"#b6c4ff","on-tertiary-fixed-variant":"#004e60","surface-variant":"#dae2fd","tertiary-container":"#004657","on-secondary-fixed-variant":"#003ea8","error":"#ba1a1a","surface-container-low":"#f2f3ff","surface":"#faf8ff","primary-container":"#1e3a8a","on-error":"#ffffff","on-background":"#131b2e","outline-variant":"#c5c5d3","inverse-surface":"#283044","tertiary":"#002e3a","secondary-fixed-dim":"#b4c5ff","on-secondary":"#ffffff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-xl":"2.5rem","space-lg":"1.5rem","space-sm":"0.5rem","gutter-sm":"1rem",margin:"2rem","space-md":"1rem","margin-sm":"1.25rem","space-xs":"0.25rem",gutter:"1.5rem"},fontFamily:{"body-sm":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-sm":["Space Grotesk"],"label-sm":["Plus Jakarta Sans"],"display-lg-mobile":["Space Grotesk"],"display-md-mobile":["Space Grotesk"],"display-lg":["Space Grotesk"],"headline-md":["Space Grotesk"],"display-md":["Space Grotesk"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Space Grotesk"]},fontSize:{"body-sm":["14px",{lineHeight:"20px",fontWeight:"400"}],"label-lg":["14px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"600"}],"body-md":["16px",{lineHeight:"24px",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"headline-sm":["18px",{lineHeight:"24px",letterSpacing:"0",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"display-lg-mobile":["38px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"display-md-mobile":["30px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"700"}],"display-lg":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"700"}],"headline-md":["22px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"display-md":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"headline-lg":["28px",{lineHeight:"36px",letterSpacing:"-0.015em",fontWeight:"600"}]}}}};</script></head><body class="bg-surface text-on-surface min-h-screen pt-safe pb-safe flex flex-col justify-between"><main class="flex-1 flex flex-col relative w-full bg-surface"><div class="flex flex-col w-full">
+<!-- Interactive Shutter Flash Overlay -->
+<div class="fixed inset-0 bg-surface-container-lowest pointer-events-none opacity-0 z-50 transition-opacity duration-200" id="flash-effect"></div>
+<!-- Hero Section -->
+<section class="px-margin-sm pt-space-md pb-space-lg flex flex-col gap-space-md">
+<!-- Top Badge Pill -->
+<div class="inline-flex items-center self-start gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-low text-primary-container shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">arrow_back_ios_new</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">#1 Trendiest Photo Strip in Town</span>
+</div>
+<!-- H1 Headline -->
+<div class="flex flex-col gap-space-xs">
+<h1 class="font-display-md-mobile text-display-md-mobile text-primary tracking-tight">
+        Capture Your Best Moments in 3-Pose Photo Strips
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Elevate your weddings, birthdays, pop-up events, and celebrations with instant studio-grade 3-pose prints &amp; digital live copies.
+      </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<a class="w-full text-center py-3.5 px-6 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md active:scale-[0.98] transition-transform" href="#packages">
+        Check Packages
+      </a>
+<a class="w-full text-center py-3 px-6 rounded-full bg-surface-container-low text-primary font-label-lg text-label-lg active:scale-[0.98] transition-transform" href="#gallery">
+        View Gallery
+      </a>
+</div>
+<!-- Social Proof Badge -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center">
+<!-- Overlapping Avatar Pill -->
+<div class="flex -space-x-2 mr-3">
+<div class="w-8 h-8 rounded-full overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A joyful Gen-Z young woman holding a glossy 3-pose photo strip at a vibrant celebration, glowing ambient royal blue lighting, bright smile, natural skin tones, soft studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOg0pLy2TFscUgHNFrdYnh03MR9-onWVyzVWVfCNu3PuBbQY6zRE17dPqjD2sHQxJ6eg_JYzeqtFeBMxnsBy4Vuw1OGq27MVeOuPrnvRZ9KF9dTfBN6aUi-hc3cvAJMUJIkebo-oblQJTkkEWlgHtRZ6Q048WEsgo5iA1fcR9J7M75NMTkEtkcl0LZR-xkMbEG4Ktgtr6ECbYd56mfYkC5Zyh_ZP5klNlq2MZB7eOGfMoMIcgE-7qH"/>
+</div>
+<div class="w-8 h-8 rounded-full overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A stylish Asian man wearing Y2K fashion glasses smiling at an evening cocktail reception event, soft party bokeh in blue and cream tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1yAwmOkjZXoo_T9Kc0XFjDezhk1VwWzU0pti6-aQIVDFQdCS16kANLMBYm0Z1tBov0Gg8amrNtONoz62eJA1HPL_KUXnbhk2W7XLBokina2psLClrYvJZaUQFj0nWC86MsX2OpWigtQlfyiYncZ3hWklOQEEUO7rTtfOfkRjCGYWTeEwvzJHa6rAhonAwgWwnrD8rqWAvF7Sf4IEHnjZLYrPENrxmVzq6Wrp5x5D9i-gqm-llHgkh"/>
+</div>
+<div class="w-8 h-8 rounded-full overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Two stylish best friends posing closely with photo props at an upscale wedding booth in Jakarta, warm studio rim light and modern aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUmJ2LBaMLigWsgzaKlvaNamSxxIMA8Gd5UQxhpimmMosUoj8MJkvt2EW_DkVYOXdtKJX7s-QARtXRw4fJnmfAXRpUE5rf4gpj9XJA-Y7fkw0xOhadLv50SPCYrnOJSZoKuymxODLbqTEt3a21Aa54dkLmRbvYVCkcNkiQiS2YAVrV-eKrbPs1I7MWidLqogEHHoMJAmvVSHuJbjTq3TiEoQx-lEL9U1jV9Km_aOOlzifOvxI5JdjK"/>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-amber-500 text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-lg text-label-lg text-on-surface">4.9/5</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">250+ events in JKT &amp; BDG</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed">Verified</span>
+</div>
+<!-- Hero Visual Card: Vertical 3-Cut Photo Strip Mockup -->
+<div class="relative pt-space-xs">
+<!-- Glow ambient background element -->
+<div class="absolute -inset-1 rounded-2xl bg-gradient-to-b from-secondary-fixed-dim/40 via-surface-container-high/30 to-transparent blur-xl"></div>
+<div class="relative bg-surface-container-lowest p-space-md rounded-2xl shadow-xl flex flex-col items-center">
+<!-- Strip Header Badge -->
+<div class="w-full flex items-center justify-between pb-2 mb-2">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Aksatacerita Live 01</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant">SEOUL VIBES 4-CUTS</span>
+</div>
+<!-- The 3 Vertical Cuts -->
+<div class="w-full flex flex-col gap-2 bg-surface-container-low p-2 rounded-xl">
+<!-- Cut 1 -->
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Close-up snapshot of three energetic friends doing playful peace signs in a bright studio photo booth, crisp lighting, royal blue backdrop accent, high resolution" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfCEbVfaKHS5Z7bUg_1qxq-UhSSpS0A_cpnPqg-jk_ahSNF18L7KZa-ZLnwmN3EGuMyg4brdndCdg2KDroTRIXs7JeT3y1VghjV1C9MWwpbSM5RC0aBOw_47TI4V-U-MjD6nBbMuRwQNXqov9M8t4xIW8fExy_13NX3xb1dEfpqkLL8s_c1mACg4zKfh55SnOx1kcP6XjlZLWeeIYGBb7h0EXUstITIcgU0BURkTzXnD6Cz-V6wIUY"/>
+<span class="absolute bottom-1 right-2 font-label-sm text-[10px] text-white/90 bg-black/40 px-1 rounded">POSE 1</span>
+</div>
+<!-- Cut 2 -->
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Playful candid moment of friends laughing hysterically wearing oversized retro sunglasses in a photo booth, crisp studio lighting, ice blue theme" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-zPzBhLSsxsXTwNgQ_xWaqIbQs1NJpmNY5lF1b_-QY-Yy8EyX2nkeWegD3gUOSEg-oy5DRKcTW6Y64VAgHt6kE8qJCTINIaxbQLT39O03mkZ3HNGJecK6TcgB3Rjp9yzzX1XRfr_xS9a_paP1atjJrZbIn8iqcN9fmhcveUZ9u8NW-g3XC8DcXc8iO44kYCQVLel0i_9BlQoo3wwFDCSfu9saiCG7iIK_74osGTiMQv7zAF-kbCro"/>
+<span class="absolute bottom-1 right-2 font-label-sm text-[10px] text-white/90 bg-black/40 px-1 rounded">POSE 2</span>
+</div>
+<!-- Cut 3 -->
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Group of friends blowing celebratory heart confetti towards the camera lens in a photo booth with radiant smiles, crisp studio flash lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd22Ag0x8hP12z0gFwK5QtPR48fQtu_q2oaBBWibNQ0g-AEBcq2zsHBcA7CpIeP_4AForoiUVS_C_r-lhUG1gPnZ2nyA3cXBjSBXVOQkeYxRL7yse5_z3WitVvBh4zISHixsHXQeANjd1RtuT4NSrWrdWBBul0EO5AOZ6vnFQ7Ny6idBH7bi41ZAt5HT6S0OaOaxhwMjrL4XOD1betG9tCAzrtiKXwp7EpJywxvqT0yhrvCh-gYADD"/>
+<span class="absolute bottom-1 right-2 font-label-sm text-[10px] text-white/90 bg-black/40 px-1 rounded">POSE 3</span>
+</div>
+</div>
+<!-- Strip Bottom Monogram / Watermark -->
+<div class="w-full pt-3 flex items-center justify-between text-on-surface-variant">
+<div class="flex flex-col">
+<span class="font-headline-sm text-label-lg text-primary tracking-tight">AKSATACERITA.</span>
+<span class="font-label-sm text-[10px] text-outline">OCT 24 • #MOMENTSUNLOCKED</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-primary-container">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span class="font-label-sm text-[10px]">Senopati Hall</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Section: 'Why Aksatacerita?' -->
+<section class="px-margin-sm py-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Studio Grade Quality</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Why Aksatacerita?</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Every snapshot is a memory curated with studio precision.</p>
+</div>
+<!-- 2x2 Feature Grid -->
+<div class="grid grid-cols-2 gap-space-xs">
+<!-- Feature 1 -->
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded-2xl shadow-sm gap-2">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">bolt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Instant Print</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">High-speed dye sublimation, dry in 15 seconds.</p>
+</div>
+<!-- Feature 2 -->
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded-2xl shadow-sm gap-2">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">palette</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Aesthetic 3-Strips</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Custom frame themes, monograms, &amp; date stamps.</p>
+</div>
+<!-- Feature 3 -->
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded-2xl shadow-sm gap-2">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">photo_camera</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Studio DSLR</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Softbox diffusion lighting, Canon DSLR clarity.</p>
+</div>
+<!-- Feature 4 -->
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded-2xl shadow-sm gap-2">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">mood</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Fun Props</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Curated Y2K shades, cute plushies, dialogue bubbles.</p>
+</div>
+</div>
+</section>
+<!-- Pricing & Packages Section -->
+<section class="px-margin-sm py-space-lg flex flex-col gap-space-md" id="packages">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Transparent Rates</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Choose Your Photo Booth Package</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">All packages include unlimited physical prints for all guests.</p>
+</div>
+<!-- Package Stack -->
+<div class="flex flex-col gap-space-md">
+<!-- Silver Pack -->
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded-2xl shadow-sm gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">Silver Pack</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Essential party package</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-display-md-mobile text-display-md-mobile text-primary tracking-tight">$299</span>
+<span class="font-label-sm text-label-sm text-outline">per event</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">schedule</span>
+<span class="font-body-sm text-body-sm">2 Hours Operating Time</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">print</span>
+<span class="font-body-sm text-body-sm">Unlimited Physical Prints</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">person</span>
+<span class="font-body-sm text-body-sm">1 Friendly On-Site Attendant</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">qr_code_2</span>
+<span class="font-body-sm text-body-sm">Instant QR Digital Download</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">category</span>
+<span class="font-body-sm text-body-sm">Basic Y2K &amp; Party Props Kit</span>
+</div>
+</div>
+<button class="w-full mt-2 py-3 rounded-full bg-surface-container-low text-primary font-label-lg text-label-lg active:scale-[0.98] transition-transform" onclick="selectPackage('Silver')">
+          Select Pack
+        </button>
+</div>
+<!-- Gold Pack (Featured) -->
+<div class="relative flex flex-col p-space-md bg-surface-container-lowest rounded-2xl shadow-xl gap-space-sm bg-gradient-to-b from-surface-container-low/40 to-surface-container-lowest">
+<!-- Floating Highlight Badge -->
+<div class="absolute -top-3 right-4 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container shadow-md">
+<span class="font-label-sm text-label-sm tracking-wider uppercase">✨ Most Popular</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">Gold Pack</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Bestseller for Weddings</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-display-md-mobile text-display-md-mobile text-secondary tracking-tight">$399</span>
+<span class="font-label-sm text-label-sm text-outline">per event</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">schedule</span>
+<span class="font-body-sm text-body-sm font-semibold">3 Hours Operating Time</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">brush</span>
+<span class="font-body-sm text-body-sm">Fully Custom Frame Layout &amp; Logo</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">group</span>
+<span class="font-body-sm text-body-sm">2 Dedicated On-Site Attendants</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">curtains</span>
+<span class="font-body-sm text-body-sm">Choice of Custom Fabric Backdrop</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">nearby</span>
+<span class="font-body-sm text-body-sm">Live AirDrop, QR Soft Copies + GIF Boomerangs</span>
+</div>
+</div>
+<button class="w-full mt-2 py-3.5 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md active:scale-[0.98] transition-transform" onclick="selectPackage('Gold')">
+          Select Pack
+        </button>
+</div>
+<!-- Platinum Pack -->
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded-2xl shadow-sm gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">Platinum Pack</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">All-inclusive VIP experience</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-display-md-mobile text-display-md-mobile text-primary tracking-tight">$549</span>
+<span class="font-label-sm text-label-sm text-outline">per event</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">schedule</span>
+<span class="font-body-sm text-body-sm">4 Hours Operating Time</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">menu_book</span>
+<span class="font-body-sm text-body-sm">Handcrafted VIP Leather Guestbook + Pen Set</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">supervisor_account</span>
+<span class="font-body-sm text-body-sm">2 Senior Attendants + Booth Coordinator</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">cloud_sync</span>
+<span class="font-body-sm text-body-sm">Full Cloud Gallery Access (1-Year Hosting)</span>
+</div>
+</div>
+<button class="w-full mt-2 py-3 rounded-full bg-surface-container-low text-primary font-label-lg text-label-lg active:scale-[0.98] transition-transform" onclick="selectPackage('Platinum')">
+          Select Pack
+        </button>
+</div>
+</div>
+</section>
+<!-- Recent Photo Strips Gallery -->
+<section class="px-margin-sm py-space-lg flex flex-col gap-space-md" id="gallery">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Portfolio</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Recent Photo Strips</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">See authentic keepsakes freshly printed at recent events.</p>
+</div>
+<!-- Gallery Filter Chips -->
+<div class="flex gap-2 overflow-x-auto pb-1 no-scrollbar">
+<button class="filter-btn px-4 py-1.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shrink-0 shadow-sm" data-category="all">
+        All Events
+      </button>
+<button class="filter-btn px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md shrink-0" data-category="weddings">
+        Weddings
+      </button>
+<button class="filter-btn px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md shrink-0" data-category="birthdays">
+        Birthdays
+      </button>
+<button class="filter-btn px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md shrink-0" data-category="popups">
+        Pop-Up Booths
+      </button>
+</div>
+<!-- Gallery Strips Stack -->
+<div class="flex flex-col gap-space-md" id="gallery-container">
+<!-- Strip 1: Birthday / Dark blue frame -->
+<div class="gallery-card bg-primary text-on-primary p-space-md rounded-2xl shadow-lg flex flex-col items-center" data-type="birthdays">
+<div class="w-full flex items-center justify-between pb-2 mb-2">
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-wider">NADIA &amp; CIRCLE</span>
+<span class="font-label-sm text-[10px] px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container">21st Birthday</span>
+</div>
+<div class="w-full flex flex-col gap-2 bg-primary-container p-2 rounded-xl">
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Birthday girl wearing a silver tiara smiling warmly with her closest best friends in front of a cobalt backdrop, studio photo booth lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf4BpQM7vkSxDmpht3zMIGhbTaxy5RFBTS8KcTp0Fu2tVPjTU7d3Z4DvI7aTdZOxEicdnj53FX-XlJVXAbA_gW-g2RB1CP692K1iw_VsEHR9wXPNemZqF3zZCUBsYiEtiKWykTOfFQAfY4Cw7XLPZmNxUbkKAcq8Wo2zIQaOt7D_qLR3FHINOaWIfAKAPq1QByLHxO6gAw5hvRIfaQAjg7dSO3lEAGRY7djLCm359AgRoJThsXl2K8"/>
+</div>
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Young adults holding neon birthday party drink glasses making funny duck faces in a studio photo booth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT1nKyRlN6mE18_-vTyQdNrv51QdoRxjSPo9kRuK_zeRJKqi26q5aTMSJnqX8WN8tefKftrBLsK2j--cE2ATmSWOSGMOF_KxtbeCqLJVThYIxTrd2BUeyrsEBHNA_OU6QQrhr4S-SYHLXLisukRnmRTLZb_BfpqgeNjRBUQjmT-xHl6_M3bC6sAHLcxMm3PwlEcIm2soCQEwEzPXaFzyG_C1ET-57ttXdSb4XkIf6VoFQsoa_rfLPn"/>
+</div>
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Playful group hug photo booth shot with birthday balloons visible in corner, beaming joyful faces, studio camera crispness" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVGYJy318FafgoSPhHCHJ0T8i0EAe2PySCjStA9axXRVJm3_O9zkVG--v4ETnr86thehCztxNgSmeGq52HkHcOM1s-rhWtj0Sl3kjOcNsQTb4lUV3xFXW6uhRPziotU4vJkHE8yTRS7FndMgi_zJdhfHcOLPDumm_Gq5N5P-VfCjHJL6ra8a5bVgjkCEAkp_LP1shraG7g3Bn2xVyr1M8ySc7R7erxb2sf3Vzzfly-sskZr23v1_rF"/>
+</div>
+</div>
+<div class="w-full pt-3 flex items-center justify-between text-on-primary-container">
+<span class="font-label-sm text-label-sm">Plataran Dharmawangsa</span>
+<span class="font-label-sm text-[11px]">OCT 2024</span>
+</div>
+</div>
+<!-- Strip 2: Wedding / Soft Ice Blue Frame -->
+<div class="gallery-card bg-surface-container-lowest text-on-surface p-space-md rounded-2xl shadow-md flex flex-col items-center" data-type="weddings">
+<div class="w-full flex items-center justify-between pb-2 mb-2">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">AERA &amp; JUN</span>
+<span class="font-label-sm text-[10px] px-2 py-0.5 rounded-full bg-surface-container text-primary">Wedding Reception</span>
+</div>
+<div class="w-full flex flex-col gap-2 bg-surface-container-low p-2 rounded-xl">
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Newlywed bride and groom smiling warmly touching foreheads in an elegant minimalist wedding photo booth, soft natural light tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgf52yt-WLpEnw2TBiS1GsuxnML1hQBioaiukE1dhRkqlT-hEkA2ypOu5wr4fGYhsQBZY5XoOkHqqnvKHGTRz-KKjy6c72zw9v6sKfNlGN-pVZjY-Fm4RUPvzYKsNtRQP3UYHbptSKpgtre1MuIn2LohYYdtKyQ46BBQ7Q_6_oTg0YQcMWjv9CK0MLJCPJGQZtc1EagyQwLov7GswXKjgooCJjbDC5c3rM2mVrxtbXVhewdKE3A1ch"/>
+</div>
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Bride holding delicate white floral bouquet laughing alongside the groom posing charmingly in black tuxedo in photo booth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtmhu4z_EZ_SRSdPvSvAqpqNKO7qC7RP8zXyjlXePQlenNfEy8ySwYm1R5oRMECQ6iKSigbMp5UcEGNlSQR-UjEb0QxK1kyp5qRxZZJToc5IPheNP1ibjKxrqS6cqNPoTy8Vkm54zmSgF-pXNdB4dMLWFb_6jAO3XhTiwELyepRsNYOR2Z4ljAoTftGKNF1BDHIcTLZzNNPVVbZ3fm6Qn5s1-AkbDsrOYj5VWEAbTMSjLmSIdNMjvO"/>
+</div>
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Romantic joyful wedding photo booth shot with couple holding a custom wooden Just Married heart prop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqEpNiPjou3RZCTRaa5Jc4oCMugfDRspVFe8MW8bJhwpSA_LSPk63nYYt7KIttWnJ3ODxsOyOjwkxAvkei3Iiyp5E6QVE19fXpq7xQvRjGnPBaUPLbYZjwNRoQ3zV-HZFbwZ8cgqCz-mrfRWQC__aLJV7xKxSrEVjNzj4V7zJvPk8fLYeDqXKChkxBENIxKnWz2s9PSNQVuj49e0Ba2RPpaWGeqnIxDfFD2TvrGZ1nLqPzXuSPUOGH"/>
+</div>
+</div>
+<div class="w-full pt-3 flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm">The Dharmawangsa Jakarta</span>
+<span class="font-label-sm text-[11px]">NOV 2024</span>
+</div>
+</div>
+<!-- Strip 3: Pop-Up Booth Setup -->
+<div class="gallery-card bg-surface-container-high text-on-surface p-space-md rounded-2xl shadow-md flex flex-col items-center" data-type="popups">
+<div class="w-full flex items-center justify-between pb-2 mb-2">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">GLAMOUR NIGHT ACTIVATION</span>
+<span class="font-label-sm text-[10px] px-2 py-0.5 rounded-full bg-secondary text-on-secondary">Brand Pop-Up</span>
+</div>
+<div class="w-full flex flex-col gap-2 bg-surface-container-lowest p-2 rounded-xl">
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Fashion event attendees wearing stylish streetwear posing confidently in a neon blue illuminated pop-up photo booth booth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvytHc7syClNdyYcrECSUsXzPUhcz40kWsADk4EIGrPPAe3tScAh_3Mtt69VRucXNsIVcu-r8Ckj9j-zDj8c8OWFPbRoB2EYPdPcCZEkVUfkFqLcZDAgI3IhK_TBZmn6IR5OA9LA_GOmDPlj_PKm9WW2BRwrwLI-9nLAo2fWbodOv4BX0B9JeVahJbiCgyPCKLr4Jw63rZ4MBHgHvSn1Eh8b2dOYkq-FRNEiDM1wB_6EjBhs3aDz7k"/>
+</div>
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Guests holding custom brand acrylic mirrors and smiling into photo booth camera with dynamic blue edge illumination" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB42Pxhd7QkYxF3XRGuf15ThOmlAyvcGllHD8UqnoHKfMv381izqrsoJqXn5ykUNfSPjkLtAzTtyZIVaUnuOU83JB_3VTL_4wlOTZwlCG3kUZC61fgCG3Y2qfKjYNmnfx0F-a7vJmy3ghBTb8tpnhs6I5bOy6QWXioUn3zVICYS5saUJ7sV_hGG_o7uduQHPsdW7_3HrNGa0cm-fb-yoYZweg2JCnQeBaVl24DP5MsFMekZjKwE5Oz4"/>
+</div>
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Chic models in evening wear celebrating at a creative launch party photo booth in Bandung" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqIRiA_EwtsH2JJyYybeAYhLnJBYJoNFwtKPJSTGzwnMuMLNwYd172FH898RNWFqTnc2MxZPMp8QR34gevpQwoPf7b5iIBq5LGygFEa3cPFdOsGZsH9ejgqXPFKzR13lgpch3r7FpbyoGjHUiHTb-tPlTblTI54xFT7ElWoBNnOXq4ttyT7ZDRAMMskgiWS0d1qUn7dfi6Ox6n4hCEtO_vyDpjyY3paHaiohYXiPn7ddJDHC_c7Rua"/>
+</div>
+</div>
+<div class="w-full pt-3 flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Paris Van Java, BDG</span>
+<span class="font-label-sm text-[11px]">DEC 2024</span>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section (Accordion) -->
+<section class="px-margin-sm py-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Got Questions?</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Frequently Asked Questions</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Everything you need to know about setting up our booth.</p>
+</div>
+<div class="flex flex-col gap-2" id="faq-accordion">
+<!-- Item 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm">
+<button aria-expanded="false" class="w-full p-space-md text-left flex items-center justify-between gap-2 faq-toggle">
+<span class="font-headline-sm text-headline-sm text-primary">How far in advance should we book?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200 faq-icon">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-on-surface-variant font-body-sm text-body-sm">
+          We recommend booking at least 3 to 6 weeks in advance, especially for weekend wedding dates and peak festive months in Jakarta and Bandung.
+        </div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm">
+<button aria-expanded="false" class="w-full p-space-md text-left flex items-center justify-between gap-2 faq-toggle">
+<span class="font-headline-sm text-headline-sm text-primary">Can we customize the frame layout?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200 faq-icon">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-on-surface-variant font-body-sm text-body-sm">
+          Yes! Gold and Platinum packs include full design collaboration with our in-house designer. We match your wedding monogram, color palette, or company branding seamlessly.
+        </div>
+</div>
+<!-- Item 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm">
+<button aria-expanded="false" class="w-full p-space-md text-left flex items-center justify-between gap-2 faq-toggle">
+<span class="font-headline-sm text-headline-sm text-primary">What space &amp; electrical needs exist?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200 faq-icon">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-on-surface-variant font-body-sm text-body-sm">
+          We need a minimum floor area of 2.5m x 2.5m and one standard grounded 220V power outlet (minimum 500 Watts). Our team arrives 60 minutes prior to call time for setup.
+        </div>
+</div>
+<!-- Item 4 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm">
+<button aria-expanded="false" class="w-full p-space-md text-left flex items-center justify-between gap-2 faq-toggle">
+<span class="font-headline-sm text-headline-sm text-primary">Do guests receive instant soft copies?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200 faq-icon">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-on-surface-variant font-body-sm text-body-sm">
+          Immediately! Right after the photos print, a personalized on-screen QR code allows guests to download their digital high-res strips and animated GIF boomerangs to their smartphones in seconds.
+        </div>
+</div>
+</div>
+</section>
+<!-- Bottom Conversion Banner & Studio Info -->
+<footer class="px-margin-sm pt-space-md pb-space-xl flex flex-col gap-space-lg">
+<div class="p-space-lg rounded-2xl bg-gradient-to-br from-primary via-primary-container to-secondary text-on-primary shadow-xl flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-wider">Let's Celebrate</span>
+<h2 class="font-display-md-mobile text-display-md-mobile tracking-tight">Ready to Capture Your Story?</h2>
+<p class="font-body-sm text-body-sm text-surface-container-high opacity-90">
+          Lock in your date today. High demand for weekends across Jakarta &amp; Bandung.
+        </p>
+</div>
+<div class="flex flex-col gap-2">
+<a class="w-full py-3.5 px-6 rounded-full bg-surface-container-lowest text-primary text-center font-label-lg text-label-lg shadow-md flex items-center justify-center gap-2 active:scale-[0.98] transition-transform" href="https://wa.me/6281234567890" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px] text-emerald-600">chat</span>
+<span>Chat via WhatsApp (+62 812-3456-7890)</span>
+</a>
+<button class="w-full py-3 px-6 rounded-full bg-secondary-container text-on-secondary-container text-center font-label-lg text-label-lg active:scale-[0.98] transition-transform flex items-center justify-center gap-2" onclick="triggerFlash()">
+<span class="material-symbols-outlined text-[18px]">event_available</span>
+<span>Check Date Availability</span>
+</button>
+</div>
+</div>
+<!-- Studio Location Summary -->
+<div class="flex flex-col gap-space-xs p-space-md bg-surface-container-lowest rounded-xl text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Studio Locations</span>
+<div class="flex items-start gap-2 pt-1">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">location_on</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Jakarta Selatan Hub</span>
+<span class="font-body-sm text-body-sm">Jl. Senopati No. 42, Kebayoran Baru, Jakarta Selatan</span>
+</div>
+</div>
+<div class="flex items-start gap-2 pt-2">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">location_on</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Bandung Creative Space</span>
+<span class="font-body-sm text-body-sm">Jl. LLRE Martadinata (Riau) No. 88, Bandung</span>
+</div>
+</div>
+</div>
+<!-- Copyright -->
+<div class="flex flex-col items-center justify-center text-center gap-1 pt-space-xs text-outline font-label-sm text-label-sm">
+<div class="flex items-center gap-1 text-primary font-headline-sm">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+<span>AKSATACERITA PHOTO BOOTH</span>
+</div>
+<p>© 2025 Aksatacerita Creative Studio. All Rights Reserved.</p>
+</div>
+</footer>
+</div>
+<script>
+  // Camera Shutter Flash Micro-interaction
+  function triggerFlash() {
+    const flash = document.getElementById('flash-effect');
+    if (!flash) return;
+    flash.style.opacity = '0.9';
+    setTimeout(() => {
+      flash.style.opacity = '0';
+    }, 180);
+    // Smooth scroll down to contact if needed
+    window.location.href = 'https://wa.me/6281234567890?text=Hi%20Aksatacerita!%20I%20would%20like%20to%20check%20date%20availability%20for%20my%20event.';
+  }
+
+  function selectPackage(packageName) {
+    const flash = document.getElementById('flash-effect');
+    if (flash) {
+      flash.style.opacity = '0.7';
+      setTimeout(() => { flash.style.opacity = '0'; }, 150);
+    }
+    const message = encodeURIComponent(`Hi Aksatacerita! I am interested in booking the ${packageName} Pack for our upcoming event.`);
+    window.location.href = `https://wa.me/6281234567890?text=${message}`;
+  }
+
+  // Gallery Filters
+  document.querySelectorAll('.filter-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      // Toggle button styles
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+        btn.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      button.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      button.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+
+      const category = button.getAttribute('data-category');
+      const cards = document.querySelectorAll('.gallery-card');
+
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-type') === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // FAQ Accordion Interaction
+  document.querySelectorAll('.faq-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+      const isExpanded = button.getAttribute('aria-expanded') === 'true';
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('.faq-icon');
+
+      // Close all others
+      document.querySelectorAll('.faq-toggle').forEach(otherBtn => {
+        if (otherBtn !== button) {
+          otherBtn.setAttribute('aria-expanded', 'false');
+          otherBtn.nextElementSibling.classList.add('hidden');
+          otherBtn.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+        }
+      });
+
+      // Toggle current
+      if (isExpanded) {
+        button.setAttribute('aria-expanded', 'false');
+        content.classList.add('hidden');
+        icon.style.transform = 'rotate(0deg)';
+      } else {
+        button.setAttribute('aria-expanded', 'true');
+        content.classList.remove('hidden');
+        icon.style.transform = 'rotate(180deg)';
+      }
+    });
+  });
+</script></main></body></html>
